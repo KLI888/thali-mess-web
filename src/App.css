@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f0eada;    
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.section {
+    padding: 30px;
+}
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  

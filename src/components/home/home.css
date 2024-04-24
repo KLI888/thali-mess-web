@@ -1,0 +1,644 @@
+.home_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home_info {
+    width: 50%;
+}
+.info_content h1 {
+    color: #ea494a;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 95px;
+    font-family: "Bungee", sans-serif;
+    margin-bottom: 10px;
+}
+.info_content p {
+    color: gray;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 3.5rem;
+}
+.info_content .info_btn {
+    background-color: #ea494a;
+    border-radius: 220px;
+    color: white;
+    padding: 16px 32px;
+    font-size: 18px;
+    transition: .3s;
+}
+.info_content .info_btn:hover {
+    padding: 16px 40px;
+}
+.home_slider {
+    width: 50%;
+}
+.home_slider .slider_container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    background-color: #f4b53f;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: end;
+    transition: transform 0.5s ease; /* Add transition for smooth sliding effect */
+
+}
+
+/* .slider_container .slider_card {
+    width: 50vw;
+    height: 100%;
+    padding: 80px 50px;
+} */
+
+.slider_container .slider_card {
+    width: 100%; /* Set the width to 100% to occupy the entire width of the container */
+    max-width: 50vw; /* You can adjust the max-width as needed */
+    height: 100%; /* Set the height to occupy the entire height of the container */
+    padding: 80px 50px;
+    box-sizing: border-box; /* Include padding in the width and height */
+    flex-shrink: 0; 
+    transition: 1s ease;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    
+}
+
+
+.slider_card h1 {
+    width: 10%;
+    font-family: "Bungee", sans-serif;
+    line-height: 48px;
+    font-size: 40px;
+    color: #48292d;
+    margin-bottom: 20px;
+}
+.slider_card p {
+    width: 60%;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    color: #48292d;
+}
+
+.home_slider .card_img {
+    justify-self: center;
+    width: 100%;
+}
+.home_slider img {
+    width: 100%;
+}
+
+.slider_control {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.slider_control .slider_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider_btn i {
+    border: 2px solid #48292d;
+    border-radius: 100%;
+    font-size: 3rem;
+    color: #48292d;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.slider_control .slider_point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+.slider_control .slider_point .point {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgba(34, 34, 34, .4);
+    cursor: pointer;
+}
+.slider_control .slider_point .point:hover{
+    border: 2px solid white;
+}
+.slider_control .slider_point .point.active {
+    background-color: #48292d;
+}
+.home_locate {
+    margin: 140px 0;
+}
+.locate_mess {
+    position: relative;
+}
+
+
+.locatemess_content {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.locatemess_content .locatemess_img {
+    width: 50%;
+    /* position: relative; */
+}
+.locatemess_img img {
+    position: absolute;
+    top: -89px;
+    right: 10vw;
+    width: 35%;
+}
+
+.locate_mess h1 {
+    font-family:  "Bungee", sans-serif;
+    color: #ea494a;
+    font-size: 85px;
+    line-height: 90px;
+    margin-bottom: 10px;
+}
+
+
+.select_menu {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+
+}
+.select_menu .select {
+    background-color: transparent;
+    border: 2px solid #f4b53f;
+    color: #48292d;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select i {
+    padding-top: 4px;
+    font-size: 24px;
+}
+
+.select_menu .options_list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
+    z-index: 11;
+}
+.options_list.active {
+    height: auto;
+}
+
+.option {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+    font-size: 18px;
+    color: #48292d;
+}
+
+.option:hover {
+    transform: translateX(10px);
+}
+.findmess_btn {
+    margin-top: 30px;
+}
+.findmess_btn a {
+    background-color: #ea494a;
+    border-radius: 220px;
+    color: white;
+    padding: 16px 32px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+
+/* contact */
+/* .contact {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../assets/contactBg.jpg") ;
+    background-size: cover;
+    mask-repeat: no-repeat;
+    background-position: 0 0, 50%;
+    width: 100%;
+    padding: 80px 32px;
+    overflow: hidden;
+} */
+
+.contact{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../../assets/contactBg.jpg") ;
+    background-position: 0 0, 50%;
+    background-size: auto, cover;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 80px 32px;
+    display: flex;
+    overflow: hidden;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid #f3e7bf;
+    padding: 20px 32px;
+    border-radius: 60px;
+}
+
+.contact_info {
+    width: 50%;
+}
+.contact_info h1 {
+    padding: 10px 0;
+    color: #f3e7bf;
+    font-family: Bungee, sans-serif;
+    line-height: 80px;
+    font-size: 80px;
+    font-weight: 400;
+}
+.contact_info p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+}
+.contact_form {
+    width: 50%;
+}
+.form_input_one {
+    display: flex;
+    gap: 10px;
+}
+.form_input_one input {
+    height: 60px;
+    border-radius: 16px;
+    padding-left: 20px;
+    outline: none;
+    color: gray;
+    font-size: 16px;
+    border: none;
+}
+
+.form_input_one .input_email {
+    width: 55%;
+}
+
+.form_input_one .input_name {
+    width: 40%;
+}
+.form_input_two {
+    margin-top: 20px;
+}
+.form_input_two textarea {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 6px;
+    padding-top: 20px;
+    padding-left: 20px;
+    outline: none;
+    color: gray;
+    font-size: 16px;
+    height: 222px;
+}
+
+
+.form_btn {
+    margin-top: 10px;
+    background-color: #ea494a;
+    border-radius: 220px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: padding .3s;
+    display: flex;
+}
+.form_btn a {
+    color: #fff;
+}
+
+
+.testomonials_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.testomonials_card {
+    background-color: white;
+    width: 330px;
+    padding: 30px;
+}
+.testomonials_card .user_info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.testomonials_card img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+.testomonials_card h2 {
+    font-size: 18px;
+    color: #48292d;
+    margin-left: 20px;
+}
+.testomonials_card h2 span {
+    color: gray;
+    font-size: 14px;
+    font-weight: 200;
+}
+.testomonials_card p {
+    font-size: 14px;
+    color: dimgrey;
+}
+.testomonials_card .user_rating {
+    margin-top: 20px;
+    color: #f4b53f;
+    font-size: 22px;
+}
+
+
+
+@media (max-width: 1150px) {
+    .home_slider .slider_container {
+        height: 650px;
+    }
+    .locate_mess h1 {
+        font-size: 80px;
+    }
+    .contact_info h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .select_menu .select {
+        padding: 16px;
+    }
+    .locate_mess h1 {
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home_content {
+        flex-direction: column-reverse;
+    }
+    .home_slider .slider_container {
+        height: 700px;
+    }
+    .home_slider {
+        width: 95%;
+    }
+    .slider_card p {
+        width: 100%;
+    }
+    .home_slider .card_img {
+        width: 199%;
+    }
+
+    .home_info {
+        width: 95%;
+    }
+    .locate_mess h1 {
+        font-size: 50px;
+    }
+    .locatemess_img img {
+        top: 0px;
+        right: 10vw;
+    }
+
+
+    .select_menu .select {
+        padding: 10px;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .findmess_btn a {
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+    
+    .contact_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact_info {
+        width: 95%;
+    }
+    .contact_info p {
+        color: #fff;
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .contact_info h1 {
+        font-size: 78px;
+    }
+
+    .contact_form {
+        width: 95%;
+    }
+
+    .testomonials_card {
+        width: 290px;
+        padding: 17px;
+    }
+}
+
+@media (max-width: 450px) {
+    .home_slider {
+        width: 110%;
+    }
+    .home_slider .slider_container {
+        height: 565px;
+    }
+    .slider_container .slider_card {
+        padding: 80px 20px;
+    }
+    .slider_card h1 {
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .slider_card p {
+        width: 100%;
+        font-size: 11px;
+    }
+    .slider_btn i {
+        font-size: 2rem;
+    }
+
+
+    .home_info {
+        width: 110%;
+    }
+    .info_content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .info_content p {
+        font-size: 14px;
+    }
+
+    .home_locate {
+        margin: 50px 0;
+    }
+    .locate_mess h1 {
+        font-size: 35px;
+    }
+    .locatemess_img img {
+        top: 90px;
+        right: 0vw;
+        width: 40%;
+    }
+
+    .select_menu .select {
+        padding: 4px;
+        font-size: 12px;
+        width: 200px;
+    }
+    .select_menu .options_list {
+        width: 65%;
+    }
+    .option {
+        font-size: 12px;
+    }
+
+    .contact_info {
+        width: 110%;
+        text-align: center;
+    }
+    .contact_container {
+        padding: 20px 20px;
+    }
+    .contact_info h1 {
+        font-size: 38px;
+        line-height: 42px;
+    }
+    .contact_info p {
+            font-size: 12px;
+        line-height: 17px;
+    }
+    .form_input_one {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .form_input_one .input_name {
+        width: 100%;
+    }
+    .form_input_one .input_email {
+        width: 100%;
+    }
+    .form_input_one input {
+        height: 50px;
+        font-size: 14px;
+    }
+    .form_input_two {
+        margin-top: 10px;
+    }
+    .form_input_two textarea {
+        height: 175px;
+        font-size: 14px;
+    }
+
+    .footer_social img {
+        width: 100px;
+    }
+    .footer_follow h2 {
+        font-size: 12px;
+    }
+    .footer_follow i {
+        padding: 3px;
+        font-size: 10px;
+    }
+    .footer_contact h2 {
+        font-size: 16px;
+    }
+    .footer_contact a span {
+        font-size: 10px;
+    }
+
+    .contact {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 80px 10px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .slider_control {
+        top: 50px;
+        right: 20px;
+    }
+    .home_slider .slider_container {
+        height: 500px;
+    }
+    .slider_btn i {
+        font-size: 1.5rem;
+    }
+    .slider_control .slider_point {
+        margin-top: 16px;
+    }
+    .slider_control .slider_point .point {
+        width: 12px;
+        height: 12px;
+    }
+
+    .slider_card p {
+        width: 130%;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 14px;
+        color: #48292d;
+    }
+
+    .info_content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .info_content p {
+        font-size: 12px;
+    }
+
+    .info_content .info_btn {
+        font-size: 14px;
+    }
+    .locatemess_img img {
+        display: none;
+    }
+}

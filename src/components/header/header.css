@@ -1,0 +1,156 @@
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.navbar .logo {
+    width: 20vw;
+}
+
+.navbar .logo img {
+    width: 100%;
+}
+
+.navbar_right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 1s;
+    z-index: 100;
+}
+
+.navbar ul li a {
+    color: #48292d;
+    font-size: 1.3vw;
+}
+.navbar ul li a.active {
+    color: #ea494a;
+}
+
+.navbar_right .navbar_btn {
+    border-radius: 200px;
+    background-color: transparent;
+    border: 1px solid #e4336a;
+    color: #ea494a;
+    padding: 8px 16px;
+}
+
+.toggle_menu i  {
+    display: none;
+    color: #fac76c;
+    font-size: 5vw;
+}
+ 
+.navbar_right ul i{
+    display: none;
+    color: #f0d6d6;
+    font-size: 5vw;
+}
+
+.navbar ul.active{
+    transform: translateX(0%);
+}
+
+
+
+@media (max-width: 1024px){
+    .navbar ul li a {
+        color: #48292d;
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 973px) {
+    .navbar {
+        padding: 20;
+    }
+    .navbar ul {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #f4b53f;
+        gap: 0;
+        padding: 40px;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+    }
+    .navbar ul li a {
+
+        font-family: "Bungee", sans-serif;
+        font-size: 30px;
+    }
+    .navbar_right .navbar_btn {
+        margin: 0 20px;
+        width: 80vw;
+        text-align: center;
+        display: block;
+        border-radius: 200px;
+        background-color: transparent;
+        border: 2px solid #e4336a;
+        color: #ea494a;
+        padding: 2px 16px;
+        font-family: "Poppins";
+        font-size: 18px;
+    }
+
+    .toggle_menu i {
+        display: block;
+        font-size: 8vw;
+    }
+
+
+    .navbar_right ul i {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 8vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+    .navbar .logo {
+        width: 30vw;
+    }
+    .toggle_menu i {
+        font-size: 10vw;
+    }
+    .navbar_right ul i {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .navbar {
+        padding: 5px 0px 5px 30px;
+    }
+    .navbar .logo {
+        width: 50vw;
+    }
+
+    .toggle_menu i {
+        font-size: 18vw;
+    }
+    .navbar_right ul i {
+        font-size: 18vw;
+    }
+}
