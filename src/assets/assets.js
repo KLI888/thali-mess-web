@@ -5,6 +5,7 @@ import slid2 from '../assets/slid2.png'
 import slid3 from '../assets/slid3.png'
 import deliveryBoy from '../assets/deliveryBoy.png'
 import contactBg from '../assets/contactBg.jpg'
+import aboutBg from '../assets/aboutBg.jpg'
 
 
 export const assets = {
@@ -14,5 +15,6 @@ export const assets = {
     slid2,
     slid3,
     deliveryBoy,
-    contactBg
+    contactBg,
+    aboutBg
 }
