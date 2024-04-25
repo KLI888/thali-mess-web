@@ -35,7 +35,7 @@
     color: #48292d;
     font-size: 1.3vw;
 }
-.navbar ul li a.active {
+.navbar ul .active {
     color: #ea494a;
 }
 
@@ -59,7 +59,7 @@
     font-size: 5vw;
 }
 
-.navbar ul.active{
+.navbar .active{
     transform: translateX(0%);
 }
 
@@ -144,7 +144,7 @@
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 470px) {
     .navbar {
         padding: 5px 0px 5px 30px;
     }
@@ -157,5 +157,10 @@
     }
     .navbar_right ul i {
         font-size: 18vw;
+    }
+    .navbar ul li a {
+        font-family: "Bungee", sans-serif;
+        font-size: 24px;
+        line-height: 50px;
     }
 }
