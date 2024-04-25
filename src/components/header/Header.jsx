@@ -11,7 +11,7 @@ function Header() {
         <header>
             <div className="navbar container">
                 <div className="logo">
-                    <Link to="/">
+                    <Link to="/" onClick={()=> setMenu("home")}>
                         <img src={assets.logo} alt="" />
                     </Link>
                 </div>
