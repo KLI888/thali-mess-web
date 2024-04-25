@@ -137,6 +137,11 @@
     .navbar_right ul i {
         font-size: 10vw;
     }
+    .navbar ul li a {
+        font-family: "Bungee", sans-serif;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 460px) {

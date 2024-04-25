@@ -411,6 +411,7 @@
 }
 
 @media (max-width: 768px) {
+    
     .home_content {
         flex-direction: column-reverse;
     }
