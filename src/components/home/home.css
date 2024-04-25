@@ -483,18 +483,19 @@
         width: 110%;
     }
     .home_slider .slider_container {
-        height: 565px;
+        height: 480px;
     }
     .slider_container .slider_card {
         padding: 80px 20px;
     }
     .slider_card h1 {
-        line-height: 40px;
-        font-size: 30px;
+        line-height: 30px;
+        font-size: 26px;
     }
     .slider_card p {
         width: 100%;
         font-size: 11px;
+        line-height: 16px;
     }
     .slider_btn i {
         font-size: 2rem;
@@ -604,8 +605,11 @@
         top: 50px;
         right: 20px;
     }
+    .slider_container .slider_card {
+        padding: 60px 20px;
+    }
     .home_slider .slider_container {
-        height: 500px;
+        height: 400px;
     }
     .slider_btn i {
         font-size: 1.5rem;
@@ -620,9 +624,9 @@
 
     .slider_card p {
         width: 130%;
-        font-size: 12px;
+        font-size: 9px;
         font-weight: 200;
-        line-height: 14px;
+        line-height: 11px;
         color: #48292d;
     }
 
