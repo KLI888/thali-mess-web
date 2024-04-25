@@ -19,10 +19,10 @@ function Header() {
                     <div className="navbar_links">
                         <div className="navar_ul">
                             <ul className={menuOn === true ? 'active' : ''}>
-                                <li><NavLink to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</NavLink></li>
-                                <li><NavLink onClick={() => setMenu("locate")} className={menu === "locate" ? "active" : ""} to="/locatemess">Locatemess</NavLink></li>
-                                <li><NavLink onClick={() => setMenu("addmess")} className={menu === "addmess" ? "active" : ""} to="/addmess">Addmess</NavLink></li>
-                                <li><NavLink onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""} to="/about">About</NavLink></li>
+                                <li><NavLink to="/" onClick={() => {setMenu("home"); setMenuOn(false)}} className={menu === "home" ? "active" : ""}>Home</NavLink></li>
+                                <li><NavLink onClick={() => {setMenu("locate"); setMenuOn(false) }} className={menu === "locate" ? "active" : ""} to="/locatemess">Locatemess</NavLink></li>
+                                <li><NavLink onClick={() => {setMenu("addmess"); setMenuOn(false)}} className={menu === "addmess" ? "active" : ""} to="/addmess">Addmess</NavLink></li>
+                                <li><NavLink onClick={() => {setMenu("about"); setMenuOn(false)}} className={menu === "about" ? "active" : ""} to="/about">About</NavLink></li>
                                 <li><NavLink className="navbar_btn" to="/">Sign In</NavLink></li>
                                 <li><i onClick={() => { setMenuOn(false) }} className='bx bx-chevron-right'></i></li>
                             </ul>
