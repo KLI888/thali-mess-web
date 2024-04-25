@@ -140,7 +140,7 @@
     .navbar ul li a {
         font-family: "Bungee", sans-serif;
         font-size: 30px;
-        margin-bottom: 20px;
+        line-height: 50px;
     }
 }
 
