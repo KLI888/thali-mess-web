@@ -327,10 +327,14 @@
         border-radius: 15px;
         padding: 20px;
     }
-}
-@media (max-width: 400px) {
-    
-    .meal_plan {
+    .meal_plan_two {
+        width: 26rem;
+        height: auto;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .meal_plan_three {
         width: 26rem;
         height: auto;
         background-color: white;
