@@ -322,7 +322,7 @@
     
     .meal_plan {
         width: 26rem;
-        height: 16rem;
+        height: auto;
         background-color: white;
         border-radius: 15px;
         padding: 20px;
