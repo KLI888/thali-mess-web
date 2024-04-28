@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/about/About'
 import Locatemess from './components/locatemess/Locatemess'
+import Messinfo from './components/messinfo/Messinfo'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -48,6 +49,16 @@ function App() {
         <>
           <Header />
           <About />
+          <Footer />
+        </>
+      )
+    },
+    {
+      path: '/locatemess/:mess',
+      element: (
+        <>
+          <Header />
+          <Messinfo />
           <Footer />
         </>
       )

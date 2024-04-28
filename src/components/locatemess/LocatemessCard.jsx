@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 import './locatemess.css'
 function LocatemessCard() {
     return (
@@ -40,8 +41,8 @@ function LocatemessCard() {
                             <h1>₹ 2500/mo</h1>
                         </div>
                         <div className="mess_infoBtn">
-                            <a className="mess_btn_one" href="">More Info</a>
-                            <a className="mess_btn_two" href="">More Info</a>
+                            <Link className="mess_btn_one" to="/locatemess/1">More Info</Link>
+                            <Link className="mess_btn_two" to="">More Info</Link>
                         </div>
                     </div>
                 </div>
@@ -82,8 +83,8 @@ function LocatemessCard() {
                             <h1>₹ 2500/mo</h1>
                         </div>
                         <div className="mess_infoBtn">
-                            <a className="mess_btn_one" href="">More Info</a>
-                            <a className="mess_btn_two" href="">More Info</a>
+                            <Link className="mess_btn_one" to="/locatemess/1">More Info</Link>
+                            <Link className="mess_btn_two" to="">More Info</Link>
                         </div>
                     </div>
                 </div>
@@ -124,8 +125,8 @@ function LocatemessCard() {
                             <h1>₹ 2500/mo</h1>
                         </div>
                         <div className="mess_infoBtn">
-                            <a className="mess_btn_one" href="">More Info</a>
-                            <a className="mess_btn_two" href="">More Info</a>
+                            <Link className="mess_btn_one" to="/locatemess/1">More Info</Link>
+                            <Link className="mess_btn_two" to="">More Info</Link>
                         </div>
                     </div>
                 </div>
@@ -166,8 +167,8 @@ function LocatemessCard() {
                             <h1>₹ 2500/mo</h1>
                         </div>
                         <div className="mess_infoBtn">
-                            <a className="mess_btn_one" href="">More Info</a>
-                            <a className="mess_btn_two" href="">More Info</a>
+                            <Link className="mess_btn_one" to="/locatemess/1">More Info</Link>
+                            <Link className="mess_btn_two" to="">More Info</Link>
                         </div>
                     </div>
                 </div>
