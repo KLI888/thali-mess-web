@@ -319,9 +319,7 @@
 }
 
 @media (max-width: 450px) {
-    .section {
-        padding: 10px;
-    }
+    
     .meal_plan {
         width: 26rem;
         height: 16rem;
