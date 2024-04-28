@@ -6,6 +6,7 @@ import slid3 from '../assets/slid3.png'
 import deliveryBoy from '../assets/deliveryBoy.png'
 import contactBg from '../assets/contactBg.jpg'
 import aboutBg from '../assets/aboutBg.jpg'
+import dot from '../assets/dot.svg'
 
 
 export const assets = {
@@ -16,5 +17,6 @@ export const assets = {
     slid3,
     deliveryBoy,
     contactBg,
-    aboutBg
+    aboutBg,
+    dot
 }
