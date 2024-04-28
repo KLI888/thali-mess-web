@@ -6,6 +6,7 @@ import Home from './components/home/Home'
 import Footer from './components/footer/Footer'
 import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/about/About'
+import Locatemess from './components/locatemess/Locatemess'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,7 +37,7 @@ function App() {
       element: (
         <>
           <Header />
-          <About />
+          <Locatemess />
           <Footer />
         </>
       )
