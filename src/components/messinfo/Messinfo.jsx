@@ -121,6 +121,10 @@ function Messinfo() {
                     </div>
                 </div>
             </div>
+            <div className="mess_intro">
+                <h2>Details Of Mess</h2>
+                <p>Welcome to <b>Tai Mess</b>, proudly owned by <b>Kavita Bhupesh Patil</b>. Located in Ramanand Nagar, we specialize in serving up delicious home-style meals with a personal touch. Join us for a culinary journey filled with flavor, comfort, and warmth.</p>
+            </div>
         </div>
     </section>
   )

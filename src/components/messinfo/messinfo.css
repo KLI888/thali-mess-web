@@ -246,7 +246,21 @@
     border-bottom: 1px solid gray;
 }
 
-
+.mess_intro {
+    margin-top: 30px;
+}
+.mess_intro h2 {
+    margin-bottom: 20px;
+    color: #ea494a;
+}
+.mess_intro p {
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+}
+.mess_intro p b {
+    color: black;
+}
 
 @media (max-width: 1024px) {
     .mess_brief_info .mess_img {
