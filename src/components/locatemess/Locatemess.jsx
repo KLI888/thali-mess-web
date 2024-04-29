@@ -9,6 +9,12 @@ function Locatemess() {
   const [showLocality, setShowLocality] = useState(false);
   const [currentCity, setCurrentCity] = useState('Choose City');
   const [currentLocality, setCurrentLocality] = useState('Choose Locality');
+  const [filterMess, setFilterMess] = useState(false);
+
+  const handleFilterMess = () => {
+    setFilterMess(!filterMess);
+  }
+
   const handleCityChange = (city) => {
     setCurrentCity(city);
     setCurrentLocality('Choose Locality');
@@ -102,10 +108,10 @@ function Locatemess() {
   return (
     <div className="locatemess">
       <div className="locatemess_content container">
-        <LocatemessInfo showCity={showCity} setShowCity={setShowCity} showLocality={showLocality} setShowLocality={setShowLocality} setCurrentCity={setCurrentCity} setCurrentLocality={setCurrentLocality} currentCity={currentCity} currentLocality={currentLocality} handleCityChange={handleCityChange} handleLocalityChange={handleLocalityChange} />
+        <LocatemessInfo showCity={showCity} setShowCity={setShowCity} showLocality={showLocality} setShowLocality={setShowLocality} setCurrentCity={setCurrentCity} setCurrentLocality={setCurrentLocality} currentCity={currentCity} currentLocality={currentLocality} handleCityChange={handleCityChange} handleLocalityChange={handleLocalityChange} handleFilterMess={handleFilterMess} />
       </div>
       <div className="locatemess_messes container">
-        <LocatemessCard currentLocality={currentLocality} messes={messes} />
+        <LocatemessCard currentLocality={currentLocality} messes={messes} filterMess={filterMess} />
       </div>
     </div>
   )

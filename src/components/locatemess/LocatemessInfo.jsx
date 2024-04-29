@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './locatemess.css';
 import { assets } from '../../assets/assets';
 
-function LocatemessInfo({showCity, showLocality, setShowCity, setShowLocality, currentCity, currentLocality, handleCityChange, handleLocalityChange}) {
+function LocatemessInfo({showCity, showLocality, setShowCity, setShowLocality, currentCity, currentLocality, handleCityChange, handleLocalityChange, handleFilterMess}) {
     const citys = ['Pune', 'Jalgaon'];
     const locations = {
         'Pune': ['Station Road', 'Akurdi', 'Talegov'],
@@ -40,7 +40,7 @@ function LocatemessInfo({showCity, showLocality, setShowCity, setShowLocality, c
                         </div>
                     </div>
                     <div className="findmess_btn">
-                        <a href="">Find</a>
+                        <a onClick={() => handleFilterMess()}>Find</a>
                     </div>
                 </div>
             </div>
