@@ -8,16 +8,19 @@ import { BrowserRouter, createBrowserRouter, RouterProvider } from 'react-router
 import About from './components/about/About'
 import Locatemess from './components/locatemess/Locatemess'
 import Messinfo from './components/messinfo/Messinfo'
+import Login from './components/loginRegister/Login'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [showLogin, setShowLogin] = useState(false)
 
   const router = createBrowserRouter([
     {
       path: '/',
       element: (
         <>
-          <Header />
+          {showLogin?<Login setShowLogin={setShowLogin} /> : <></>}
+          <Header  setShowLogin={setShowLogin}/>
           <Home />
           <Footer />
         </>

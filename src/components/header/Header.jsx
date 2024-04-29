@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets';
 import './header.css';
 import { Link, NavLink } from 'react-router-dom';
 
-function Header() {
+function Header({setShowLogin}) {
     const [menuOn, setMenuOn] = useState(false);
     const [menu, setMenu] = useState("home");
 
@@ -23,7 +23,7 @@ function Header() {
                                 <li><NavLink onClick={() => {setMenu("locate"); setMenuOn(false) }} className={menu === "locate" ? "active" : ""} to="/locatemess">Locatemess</NavLink></li>
                                 <li><NavLink onClick={() => {setMenu("addmess"); setMenuOn(false)}} className={menu === "addmess" ? "active" : ""} to="/addmess">Addmess</NavLink></li>
                                 <li><NavLink onClick={() => {setMenu("about"); setMenuOn(false)}} className={menu === "about" ? "active" : ""} to="/about">About</NavLink></li>
-                                <li><NavLink className="navbar_btn" to="/">Sign In</NavLink></li>
+                                <li onClick={()=>setShowLogin(true)}><NavLink className="navbar_btn" to="/" >Sign In</NavLink></li>
                                 <li><i onClick={() => { setMenuOn(false) }} className='bx bx-chevron-right'></i></li>
                             </ul>
                         </div>
