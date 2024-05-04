@@ -14,11 +14,11 @@ function Testomonials({ testomonials }) {
                             <p>{`"${item.desc}"`}</p>
                         </div>
                         <div className="user_rating">
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
-                            <i class='bx bxs-star'></i>
+                            <i className='bx bxs-star'></i>
+                            <i className='bx bxs-star'></i>
+                            <i className='bx bxs-star'></i>
+                            <i className='bx bxs-star'></i>
+                            <i className='bx bxs-star'></i>
                         </div>
                     </div>
                 })}

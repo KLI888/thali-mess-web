@@ -17,7 +17,7 @@ function Contact() {
                         <input type="text" placeholder='Enter your Email address' className="input_email" />
                     </div>
                     <div className="form_input_two">
-                        <textarea id="description" name="description" maxlength="5000" data-name="description" placeholder="Add some description related to your event, number of people and dates.Example Text" class="input_desc"></textarea>
+                        <textarea id="description" name="description" maxLength="5000" data-name="description" placeholder="Add some description related to your event, number of people and dates.Example Text" class="input_desc"></textarea>
                     </div>
                     <div className="form_btn">
                         <a href="">Send</a>
