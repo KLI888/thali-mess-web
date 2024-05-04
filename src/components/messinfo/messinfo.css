@@ -195,7 +195,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    overflow-x: scroll;
+    gap: 10px;
 }
 
 .days li {
